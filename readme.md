@@ -2,7 +2,7 @@
 
 [![Build Status](http://img.shields.io/travis/wilmoore/knex-mysql-middleware.svg)](https://travis-ci.org/wilmoore/knex-mysql-middleware) [![NPM version](http://img.shields.io/npm/v/knex-mysql-middleware.svg)](https://www.npmjs.org/package/knex-mysql-middleware) [![NPM downloads](http://img.shields.io/npm/dm/knex-mysql-middleware.svg)](https://www.npmjs.org/package/knex-mysql-middleware) [![LICENSE](http://img.shields.io/npm/l/knex-mysql-middleware.svg)](LICENSE)
 
-> Initialize a MySQL flavored Knex connection that can be accessed via Koa or Express middleware (i.e. route handlers).
+> Set a MySQL flavored Knex connection that can be accessed via Koa or Express middleware.
 
     $ npm install knex-mysql-middleware
 

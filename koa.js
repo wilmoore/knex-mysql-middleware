@@ -13,7 +13,7 @@ var knex = require('knex');
 module.exports = knexMysqlKoa;
 
 /**
- * Initialize a MySQL flavored Knex connection that can be accessed via Koa or Express middleware (i.e. route handlers).
+ * Set a MySQL flavored Knex connection that can be accessed via Koa or Express middleware.
  *
  * @return {Function}
  * Koa middleware.
