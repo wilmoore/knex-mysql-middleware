@@ -1,6 +1,6 @@
 {
   "name": "knex-mysql-middleware",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Initialize a MySQL flavored Knex connection that can be accessed via Koa or Express middleware (i.e. route handlers).",
   "main": "koa.js",
   "scripts": {
