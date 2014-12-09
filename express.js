@@ -5,6 +5,7 @@
  */
 
 var knex = require('knex');
+var close = require('./close');
 
 /**
  * Exports.
@@ -30,8 +31,14 @@ function knexMysqlExpress() {
     database : process.env.DATABASE_NAME
   };
 
+  var pool = {
+    min : process.env.DATABASE_POOL_MIN || 0,
+    max : process.env.DATABASE_POOL_MAX || 1
+  };
+
   return function knexMysqlExpress(req, res, next) {
     req.knex = knex({ client: 'mysql', connection: conn });
     next();
+    res.once('finish', close.bind(this, req.knex));
   };
 };
